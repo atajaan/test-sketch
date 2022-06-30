@@ -27,12 +27,8 @@ let mouseDown = false
 document.body.onmousedown = () => (mouseDown = true)
 document.body.onmouseup = () => (mouseDown = false)
 
-function setCurrentSize(newSize) {
-  currentSize = newSize
-}
-
 function changeSize(value) {
-  setCurrentSize(value)
+  currentSize = value
   updateSizeValue(value)
   reloadGrid()
 }
